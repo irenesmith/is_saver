@@ -5,6 +5,15 @@ namespace ISaver
 {
     static class Program
     {
+        // This has to be accessible from all
+        // screens or the program will continue
+        // to try to draw at a point where
+        // the graphic contexts are no longer
+        // valid. Not sure why this can happen
+        // after calling Application.Exit, but it
+        // does.
+        public static bool Done = false;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,6 +26,10 @@ namespace ISaver
             string arg1 = string.Empty;
             string arg2 = string.Empty;
 
+            // Determine whether we should be in screensaver
+            // mode, configuration mode, or preview mode.
+            // Preview mode is where the screensaver is
+            // displayed in the small window.
             if (args.Length > 0)
             {
                 arg1 = args[0].Trim().ToLower();
@@ -54,11 +67,13 @@ namespace ISaver
                         return;
                     } 
                     IntPtr previewWndHandle = new IntPtr(long.Parse(arg2));
-                    Application.Run(new ScreensaverForm(previewWndHandle));
+                    Application.Run(new MainForm(previewWndHandle));
                     break;
                 case "/s": // Screensaver mode.
-                    ShowScreensaver();
-                    Application.Run();
+                    MainForm mainForm = new MainForm();
+                    mainForm.WindowState = FormWindowState.Maximized;
+                    mainForm.Bounds = Screen.AllScreens[0].Bounds;
+                    Application.Run(mainForm);
                     break;
                 case "/c": // Configuration mode.
                     // TODO add real configuration!
@@ -70,16 +85,6 @@ namespace ISaver
                         "\" is not valid.", "ScreenSaver",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     break;
-            }
-            Cursor.Show();
-        }
-
-        static void ShowScreensaver()
-        {
-            foreach(Screen screen in Screen.AllScreens)
-            {
-                ScreensaverForm screensaver = new ScreensaverForm();
-                screensaver.Show();
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace ISaver
 {
-    partial class ScreensaverForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,20 @@
         {
             this.SuspendLayout();
             // 
-            // ScreensaverForm
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ScreensaverForm";
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ScreensaverForm_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ScreensaverForm_KeyPress);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ScreensaverForm_MouseClick);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ScreensaverForm_MouseMove);
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MainForm_KeyPress);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
             this.ResumeLayout(false);
 
         }

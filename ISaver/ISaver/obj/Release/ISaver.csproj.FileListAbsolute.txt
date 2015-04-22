@@ -6,3 +6,13 @@ c:\users\irene\documents\visual studio 2013\Projects\ISaver\ISaver\obj\Release\I
 c:\users\irene\documents\visual studio 2013\Projects\ISaver\ISaver\obj\Release\ISaver.csproj.GenerateResource.Cache
 c:\users\irene\documents\visual studio 2013\Projects\ISaver\ISaver\obj\Release\ISaver.exe
 c:\users\irene\documents\visual studio 2013\Projects\ISaver\ISaver\obj\Release\ISaver.pdb
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\bin\Release\ISaver.exe.config
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\obj\Release\ISaver.exe
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\obj\Release\ISaver.pdb
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\obj\Release\ISaver.csprojResolveAssemblyReference.cache
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\obj\Release\ISaver.Properties.Resources.resources
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\obj\Release\ISaver.MainForm.resources
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\obj\Release\ISaver.csproj.GenerateResource.Cache
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\bin\Release\ISaver.exe
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\bin\Release\ISaver.pdb
+C:\Users\Irene\Documents\GitHub\is_saver\ISaver\ISaver\obj\Release\ISaver.MultiMonitorForm.resources
